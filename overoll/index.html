@@ -6,9 +6,28 @@
     </head>
     <body>
         <h1>Оверолл</h1>
-        <p>Баскино</p>
-        <iframe src="http://s8.staticnlcdn.com/video/0d4ae4961e23e66c/iframe" width="610" height="370" frameborder="0" allowfullscreen></iframe>
         <p>Муви</p>
-        <iframe width="640" height="390" src="//myvi.ru/player/embed/html/oh4-sZM6v9-SsjUSoqgZDGscKSRxaUeJL6ifHUzRut8elCrDbuCAH1hlwEBvtFKBx0" frameborder="0" allowfullscreen></iframe>
+        <div class="boostervideo-slot" data-booster_hash="MzI3b1RNQ2F2dlVVT3RweFZydHZsWGhoaXRtQ1JFR0puUmxhbTZxaVUvZnV2ZitXVG13MXlWUTAzdHE3dVYzV2U0QmhhWVVqTkJtaFNBT0RBcUtHYnc9PQ==">
+            <iframe width="640" height="390" src="//myvi.ru/player/embed/html/oh4-sZM6v9-SsjUSoqgZDGscKSRxaUeJL6ifHUzRut8elCrDbuCAH1hlwEBvtFKBx0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <script>
+            top.boostervideo = top.boostervideo || [];
+            (function () {
+            var url = "https://test.boostervideo.ru/client/boostervideo.js";
+            if (!document.querySelector || !document.querySelector("script[src='" + url + "']")) {
+                var script = document.createElement('script');
+                script.async = 1;
+                script.src = url;
+                var parent = document.querySelector('script');
+                parent.parentNode.insertBefore(script, parent);
+            }
+            top.boostervideo.push(function () {
+                top.boostervideo.domain("test.boostervideo.ru");
+            });
+            })();
+            top.boostervideo.push(function () {
+            top.boostervideo.get();
+            });
+        </script>
     </body>
 </html>
